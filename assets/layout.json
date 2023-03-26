@@ -1,0 +1,58 @@
+{
+  "about": {
+    "programming_languages": [
+      "C++",
+      "Typescript",
+      "Python",
+      "& More"
+    ],
+    "code_editor": [
+      "VSCode",
+      "NeoVIM"
+    ],
+    "about_me": {
+      "title": "A few things about me",
+      "desc": "My name is <b>Marios Mitsios</b> and I am a <b>teenager</b> full stack and desktop programmer. <br> Here are a few things about me."
+    }
+  },
+  "working_on": [
+    {
+      "name": "Sinerider Reddit Bot",
+      "img": "/img/sinerider.png",
+      "desc": "A reddit bot that rates <b>your sinerider</b> level solutions.",
+      "repo": "https://github.com/GalaxyGamingBoy/sinerider-reddit-bot"
+    },
+    {
+      "name": "Galaxygine",
+      "img": "/img/galaxygine.png",
+      "desc": "A web Game Engine written in Typescript and utilies Canvas elements.",
+      "repo": "https://github.com/GalaxyGamingBoy/galaxygine"
+    }
+  ],
+  "portofolio": [
+    {
+      "name": "Galaxygine",
+      "img": "/img/galaxygine.png",
+      "desc": "A web Game Engine written in Typescript and utilies Canvas elements.",
+      "repo": "https://github.com/GalaxyGamingBoy/galaxygine"
+    },
+    {
+      "name": "Thunder Calculator",
+      "img": "/img/thunder.png",
+      "desc": "Helps you calculate the distance between you and a thunder strike",
+      "repo": "https://github.com/GalaxyGamingBoy/flutter-thunder-calculator"
+    },
+    {
+      "name": "Sinerider Reddit Bot",
+      "img": "/img/sinerider.png",
+      "desc": "A reddit bot that rates <b>your sinerider</b> level solutions.",
+      "repo": "https://github.com/GalaxyGamingBoy/sinerider-reddit-bot"
+    },
+    {
+      "name": "C++ Terminal for Projects",
+      "img": "img/cpp_terminal.png",
+      "desc": "Simple C++ terminal for all of your CLI projects",
+      "repo": "https://github.com/GalaxyGamingBoy/CPP-TEMPLATE-PROJECT-TERMINAL"
+    }
+  ]
+}

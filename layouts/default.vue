@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <Navbar></Navbar>
+    </div>
+    <div>
+        <slot></slot>
+    </div>
+    <div>
+        <Footer></Footer>
+    </div>
+</template>
