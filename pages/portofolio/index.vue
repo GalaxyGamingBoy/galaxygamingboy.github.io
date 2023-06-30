@@ -1,3 +1,0 @@
-<template>
-    <Portofolio></Portofolio>
-</template>
