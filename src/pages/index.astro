@@ -1,5 +1,228 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import github from "../svg/square-github.svg";
+import email from "../svg/square-envelope-solid.svg";
+import key from "../svg/key-solid.svg";
 ---
 
-<Layout />
+<Layout>
+    <div class="flex justify-center m-3">
+        <img
+            src="https://cloud-80hg6b4ls-hack-club-bot.vercel.app/0me-min-crop-min.jpg"
+            class="w-4/12 h-1/12 rounded-lg"
+            alt="Picture of Marios"
+            id="pfp"
+        />
+        <div class="m-3">
+            <h1 class="font-bold text-2xl">About me!</h1>
+            <p class="max-w-sm">
+                I am <b>Marios Mitsios</b> a {
+                    new Date(
+                        Date.now() - new Date("2008-12-09").getTime()
+                    ).getFullYear() - 1970
+                } year old teenage programmer that lives in <b
+                    >Trikala, Greece</b
+                >
+                I am a regular and active member of HackClub and I regularly contribute
+                to their oprn source projects, like <a
+                    href="https://sinerider.com"
+                    class="underline text-indigo-600">Sinerider</a
+                >
+                I currently am developing <a
+                    href="https://simplifiedcoding.org"
+                    class="underline text-indigo-600">Simplified Coding</a
+                >! Simplified Coding is a project that teaches <b>Programming</b
+                > to people that speak Greek.
+            </p>
+            <div>
+                <div>
+                    <img src={github} class="w-1/12 inline" />
+                    <a href="https://github.com/GalaxyGamingBoy" class="inline"
+                        >My <b class="underline text-indigo-600">Github</b></a
+                    >
+                </div>
+                <div>
+                    <img src={email} class="w-1/12 inline" />
+                    <a href="mailto:xrteach@hotmail.com" class="inline"
+                        >My <b class="underline text-indigo-600">Email</b></a
+                    >
+                </div>
+                <div>
+                    <img src={key} class="w-1/12 inline" />
+                    <a href="#other" class="inline"
+                        >My <b class="underline text-indigo-600">GPG Key</b></a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="float-left m-5" id="experience">
+        <div>
+            <h1 class="font-bold text-5xl">Experience</h1>
+            <h3 class="text-xl">
+                That I <b class="underline">have</b>.
+            </h3>
+            <br />
+        </div>
+        <div>
+            <div class="w-full">
+                <div class="shadow rounded border-b border-gray-200">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-gray-800 text-white">
+                            <tr>
+                                <th
+                                    class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm"
+                                    >Company</th
+                                >
+                                <th
+                                    class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm"
+                                    >Role</th
+                                >
+                                <th
+                                    class="text-left py-3 px-4 uppercase font-semibold text-sm"
+                                    >Duration</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="bg-gray-100">
+                                <td class="text-left py-3 px-4"
+                                    ><a
+                                        class="hover:text-blue-500 underline"
+                                        href="https://testwiz.xyz">TestWiz</a
+                                    ></td
+                                >
+                                <td class="w-1/3 text-left py-3 px-4"
+                                    >Founder & Chief Web Developer</td
+                                >
+                                <td class="w-1/3 text-left py-3 px-4">2023-</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left py-3 px-4"
+                                    ><a
+                                        class="hover:text-blue-500 underline"
+                                        href="https://simplifiedcoding.org"
+                                        >Simplified Coding</a
+                                    ></td
+                                >
+                                <td class="w-1/3 text-left py-3 px-4"
+                                    >Chief Web Developer</td
+                                >
+                                <td class="w-1/3 text-left py-3 px-4">2023-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+    <div class="m-5 float-left" id="projects">
+        <div>
+            <h1 class="font-bold text-5xl">Projects</h1>
+            <h3 class="text-xl">That I have <b class="underline">built</b></h3>
+            <br />
+            <ul>
+                <li class="text-xl">
+                    <a class="underline font-bold" href="https://testwiz.xyz"
+                        >TestWiz</a
+                    > (& Backend), A website that let's you solve quizzes and rates
+                    them using AI tools
+                </li>
+                <li class="text-xl">
+                    <a
+                        class="underline font-bold"
+                        href="https://github.com/GalaxyGamingBoy/sinerider-reddit-bot"
+                        >Sinerider Reddit Bot</a
+                    >, A bot that communicates with the Sinerider Scoring
+                    Server, Sinerider API and the Reddit API to allow users to
+                    score their levels without leaving Reddit.
+                </li>
+                <li class="text-xl">
+                    <a
+                        class="underline font-bold"
+                        href="https://github.com/GalaxyGamingBoy/galaxygine"
+                        >Galaxygine</a
+                    >, A web game development engine that is meant to be <b
+                        class="underline">easy</b
+                    >
+                </li>
+                <li class="text-xl">
+                    <a
+                        class="underline font-bold"
+                        href="https://github.com/GalaxyGamingBoy/flutter-thunder-calculato"
+                        >Thunder Calculator</a
+                    >, An Android app that lets you calculate the distance
+                    between you and a thunder strike
+                </li>
+                <li class="text-xl">
+                    <a
+                        class="underline font-bold"
+                        href="https://github.com/GalaxyGamingBoy/flutter-thunder-calculato"
+                        >Plant Location Chooser</a
+                    >, An Arduino project that helps you decide if an area is
+                    suitable to plant your specific plant.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br />
+    <div class="m-5 float-left" id="tools">
+        <div>
+            <h1 class="font-bold text-5xl">Tools</h1>
+            <h3 class="text-xl">
+                That I have <b class="underline">built</b> for different uses
+            </h3>
+            <br />
+            <ul>
+                <li class="text-xl">
+                    <a
+                        class="underline font-bold"
+                        href="https://github.com/GalaxyGamingBoy/FFMPEG_UTILITIES"
+                        >FFMPEG Python Tools</a
+                    >, are python scripst that help make the ffmpeg experience
+                    easier and better.
+                </li>
+                <li class="text-xl">
+                    <a
+                        class="underline font-bold"
+                        href="https://github.com/GalaxyGamingBoy/sprig-utilities"
+                        >Sprig Aseprite Tools</a
+                    >, are scripts and files that can be used on Aseprite to
+                    export sprig sprites.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br />
+    <div class="m-5 float-left" id="other">
+        <div>
+            <h1 class="font-bold text-5xl">Other</h1>
+            <h3 class="text-xl">
+                Stuff that <b class="underline">might be useful</b>
+            </h3>
+            <br />
+            <ul>
+                <li class="text-xl">
+                    <a
+                        class="underline font-bold"
+                        href="https://keys.openpgp.org/vks/v1/by-fingerprint/E892E93D5400F30B0BAC2D604091FB8D0E107239"
+                        >My GPG public key</a
+                    >, that I use for all encryption. That includes emails or
+                    any other files that I may have sent. Be sure to use it if
+                    needed.
+                </li>
+            </ul>
+        </div>
+    </div>
+</Layout>
+
+<script>
+    // If Screen smaller than 1200px hide profile picture
+    const pfp = document.getElementById("pfp");
+    if (pfp && window.innerWidth <= 1200) {
+        pfp.hidden = true;
+    }
+</script>
